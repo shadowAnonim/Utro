@@ -1,0 +1,14 @@
+﻿<Page x:Class="utro.Pages.StorekeeperPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:utro.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StorekeeperPage">
+
+    <Grid>
+        <Button x:Name="fabricBtn" Content="Список тканей" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Click="fabricBtn_Click"/>
+    </Grid>
+</Page>

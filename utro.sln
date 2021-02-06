@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "utro", "utro\utro.csproj", "{F3B8EDB7-66AD-491C-8F36-1604647C8909}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3B8EDB7-66AD-491C-8F36-1604647C8909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B8EDB7-66AD-491C-8F36-1604647C8909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B8EDB7-66AD-491C-8F36-1604647C8909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B8EDB7-66AD-491C-8F36-1604647C8909}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66EC4310-3075-4A59-AEFB-06AAEBE40582}
+	EndGlobalSection
+EndGlobal

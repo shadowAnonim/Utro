@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4cc2aacc38964116b699a26821af7bb3" Name="Diagram1">
+        <EntityTypeShape EntityType="utroModel.fabric" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.fabricStorage" Width="1.5" PointX="5.25" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.furniture" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.furnitureStorage" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.order_products" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.product" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.product_furnitures" Width="1.5" PointX="7.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.role" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.stage" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="utroModel.user" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="utroModel.FK_fabricStorage_fabric" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_furnitureStorage_furniture" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_product_furnitures_furniture" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_order_stage" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_order_user" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_order_user1" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_order_products_order" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_order_products_product" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_product_furnitures_product" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.FK_user_role" ManuallyRouted="false" />
+        <AssociationConnector Association="utroModel.product_fabrics" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
