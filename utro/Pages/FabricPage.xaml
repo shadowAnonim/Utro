@@ -32,8 +32,8 @@
                 <DataGridTextColumn x:Name="widthColumn" Width="SizeToCells" Header="width" Binding="{Binding width}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="addBtn" Content="Добавить" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="16" FontFamily="Arial" Background="#FFE0A9AF"/>
-        <Button x:Name="editBtn" Content="Редактировать" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Background="#FFE0A9AF" Margin="0" Grid.Column="1" Width="120"/>
+        <Button x:Name="addBtn" Content="Добавить" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="16" FontFamily="Arial" Background="#FFE0A9AF" Click="addBtn_Click"/>
+        <Button x:Name="editBtn" Content="Редактировать" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Background="#FFE0A9AF" Margin="0" Grid.Column="1" Width="120" Click="editBtn_Click"/>
         <Button x:Name="deleteBtn" Content="Удалить" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="16" FontFamily="Arial" Background="#FFE0A9AF" Margin="0" Grid.Column="2" Click="deleteBtn_Click"/>
 
     </Grid>

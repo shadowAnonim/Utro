@@ -7,11 +7,11 @@
       xmlns:utro="clr-namespace:utro" x:Class="utro.Pages.EditFabricPage"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="EditFabricPage">
+      Title="EditFabricPage" Loaded="Page_Loaded">
 
     <Grid>
 
-        <Grid x:Name="grid1" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Center" DataContext="{StaticResource fabricViewSource}">
+        <Grid x:Name="grid1" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Center" Validation.Error="grid1_Error">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -21,6 +21,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -42,8 +43,8 @@
             <TextBox x:Name="paintTextBox" Width="120" VerticalAlignment="Center" Text="{Binding paint, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="6" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
             <Label VerticalAlignment="Center" Grid.Row="7" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="width:"/>
             <TextBox x:Name="widthTextBox" Width="120" VerticalAlignment="Center" Text="{Binding width, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="7" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Button x:Name="editBtn" Content="Сохранить" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.723,-0.375" Grid.Row="8" Grid.Column="1" Click="editBtn_Click"/>
         </Grid>
-        <Button x:Name="button" Content="Сохранить" HorizontalAlignment="Center" Margin="524,222,202,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.723,-0.375"/>
 
     </Grid>
 </Page>

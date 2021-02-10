@@ -41,5 +41,18 @@ namespace utro.Pages
             MsHelp.db.SaveChanges();
             Page_Loaded(null, null);
         }
+
+        private void editBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+            fabric obj = fabricDataGrid.SelectedItem as fabric;            
+            NavigationService.Navigate(new EditFabricPage(obj));
+        }
+
+        private void addBtn_Click(object sender, RoutedEventArgs e)
+        {
+            fabric obj = fabricDataGrid.SelectedItem as fabric;
+            NavigationService.Navigate(new EditFabricPage(null));
+        }
     }
 }

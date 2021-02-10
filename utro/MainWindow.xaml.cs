@@ -29,7 +29,6 @@ namespace utro
 
         private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
-            if (frame.CanGoBack) backBtn.Visibility = Visibility.Visible;
             if (e.Content is AutorisationPage)
             {
                 backBtn.Visibility = Visibility.Hidden;
@@ -37,6 +36,7 @@ namespace utro
             }
             else
             {
+                backBtn.Visibility = Visibility.Visible;
                 exitBtn.Visibility = Visibility.Visible;
             }
             if (e.Content is RegistrationPage) 
